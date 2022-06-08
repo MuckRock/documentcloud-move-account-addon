@@ -16,8 +16,8 @@ type: object
 documents:
   - query
 properties:
-  Confirm current username:
-    title: User
+  user:
+    title: Confirm current username
     type: string
     description: Please type the username of the current user to confirm the operation (i.e. peterparker)
   new_user_id:
