@@ -2,28 +2,30 @@ title: Move Account
 description: >-
   This will change account owner for all documents in your current search.
   Please enter the user ID of the account you would like to transfer documents
-  to.  This user must be in one of your organizations.
+  to.  To get the user ID, click "Your Documents" while logged in - the number
+  at the end of the search bar, after your name, is your user ID.  To transfer
+  documents, both users must be a member of at least one shared organization.
 
   # WARNING
 
   This is a destructive action.  You may lose access to all documents affected
-  by this add-on.  This is add-on is primarily meant for users who have ended
+  by this Add-On.  This is Add-On is primarily meant for users who have ended
   up with mutliple accounts and would like to consolidate them.  Please be very
-  sure you know what you are doing before running this add-on.
+  sure you know what you are doing before running this Add-On.
 type: object
 documents:
   - query
 properties:
-  user:
+  Confirm current username:
     title: User
     type: string
-    description: Please type the username of the current user to confirm the operation
+    description: Please type the username of the current user to confirm the operation (i.e. peterparker)
   new_user_id:
-    title: New Account ID
+    title: Account ID to move documents
     type: integer
-    description: The user ID for the account to transfer the documents to
+    description: The user ID for the account to transfer the documents to (this is a number)
   new_org_id:
     title: New Organization ID
     type: integer
-    description: The organization ID for the organization to transfer the documents to (optional)
+    description: The organization ID for the organization to transfer the documents to (optional, this is a number).  Both the old and new user must be a member of this organization.
 required: ["new_user_id", "user"]
