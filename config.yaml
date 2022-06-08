@@ -1,23 +1,29 @@
-title: Bulk Edit
+title: Move Account
 description: >-
-  This will update document information for all documents in your current
-  search.  Please be sure you have edit access to these documents before running
-  this add-on.
+  This will change account owner for all documents in your current search.
+  Please enter the user ID of the account you would like to transfer documents
+  to.  This user must be in one of your organizations.
+
+  # WARNING
+
+  This is a destructive action.  You may lose access to all documents affected
+  by this add-on.  This is add-on is primarily meant for users who have ended
+  up with mutliple accounts and would like to consolidate them.  Please be very
+  sure you know what you are doing before running this add-on.
 type: object
 documents:
   - query
 properties:
-  description:
-    title: Description
+  user:
+    title: User
     type: string
-  published_url:
-    title: Published URL
-    type: string
-    format: uri
-  related_article:
-    title: Related Article URL
-    type: string
-    format: uri
-  source:
-    title: Source
-    type: string
+    description: Please type the username of the current user to confirm the operation
+  new_user_id:
+    title: New Account ID
+    type: integer
+    description: The user ID for the account to transfer the documents to
+  new_org_id:
+    title: New Organization ID
+    type: integer
+    description: The organization ID for the organization to transfer the documents to (optional)
+required: ["new_user_id", "user"]
