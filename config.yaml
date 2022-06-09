@@ -11,7 +11,7 @@ description: >-
   This is a destructive action.  You may lose access to all documents affected
   by this Add-On.  This is Add-On is primarily meant for users who have ended
   up with mutliple accounts and would like to consolidate them.  Please be very
-  sure you know what you are doing before running this Add-On.
+  sure you know what you are doing before running this Add-On and [read the full instructions and tips here](https://github.com/MuckRock/documentcloud-move-account-addon#readme).
 type: object
 documents:
   - query
