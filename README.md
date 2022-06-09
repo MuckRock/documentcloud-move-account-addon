@@ -18,6 +18,7 @@ First, there's a few things you will want to have handy:
 * The *user id* of the account which will receive the documents. This is a __number__, not a username. While logged in as the user that will be receiving the documents, if you click "Your Documents" it's the string of numbers after your name.
 ![Screen Shot 2022-06-09 at 9 53 52 AM](https://user-images.githubusercontent.com/136939/172864148-bdc1428d-a833-4eba-afd5-1d67589e1347.png)
 * If you'd like to move the organization that the documents are associated with, also get the organization ID. While logged in as either user, make that organization your active organization and then click "`Organization Name`'s Documents." It will be the number at the end of that name.
+
 ![Screen Shot 2022-06-09 at 9 56 07 AM](https://user-images.githubusercontent.com/136939/172864645-2f0c2a69-e0fa-459f-bfce-5d6af50f5729.png)
 * To transfer the documents to a different organization, both the old and the new owner must be a member of that organization.
 
