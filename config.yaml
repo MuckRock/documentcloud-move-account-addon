@@ -27,5 +27,8 @@ properties:
   new_org_id:
     title: New Organization ID
     type: integer
-    description: The organization ID for the organization to transfer the documents to (optional, this is a number).  Both the old and new user must be a member of this organization.
+    description: >
+      The organization ID for the organization to transfer the documents to (optional, this is a number).
+      If this is omitted, the documents will not change organization, even if the new owner is not in their current organization.
+      Both the old and new user must be a member of this organization.
 required: ["new_user_id", "user"]
