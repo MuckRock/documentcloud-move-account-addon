@@ -43,7 +43,7 @@ class MoveAccount(AddOn):
             raise ValueError
 
         # fetch 25 documents at a time, and bulk edit them in one call
-        documents = self.client.documents.search(self.query, per_page=BULK_LIMIT)
+        documents = self.get_documents()
         count = 0
         data = {"user": self.data["new_user_id"]}
         if new_org_id:
