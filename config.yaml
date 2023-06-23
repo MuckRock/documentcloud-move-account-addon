@@ -1,11 +1,14 @@
 title: Move Account
 description: >-
   This will change account owner for all documents in your current search.
-  Please enter the user ID of the account you would like to transfer documents
-  to.  To get the user ID, click "Your Documents" while logged in - the number
-  at the end of the search bar, after your name, is your user ID.  To transfer
-  documents, both users must be a member of at least one shared organization.
-
+  To documents, both users must be a member of at least one shared organization.
+  DocumentCloud has a group membership dropdown on the left sidebar. 
+  Click on the user you would like to transfer documents to, 
+  and copy the digits after their name that appear in the search bar. 
+  The organization ID can be found by clicking on the 
+  documents for the organization on the left sidebar and copying the 
+  digits that follow the name of the organization on the search bar. 
+  Your current username can be found at https://account.muckrock.com/ under your name. 
   # WARNING
 
   This is a destructive action.  You may lose access to all documents affected
