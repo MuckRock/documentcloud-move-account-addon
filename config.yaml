@@ -1,7 +1,7 @@
 title: Move Account
 description: >-
-  This will change account owner for all documents in your current search.
-  To documents, both users must be a member of at least one shared organization.
+  This will change the account owner for all documents in your current search.
+  To transfer documents, both users must be a member of at least one shared organization.
   DocumentCloud has a group membership dropdown on the left sidebar. 
   Click on the user you would like to transfer documents to, 
   and copy the digits after their name that appear in the search bar. 
