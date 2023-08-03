@@ -10,8 +10,8 @@ description: >-
   documents for the organization on the left sidebar and copying the 
   digits that follow the name of the organization on the search bar. 
   Your current username can be found at https://account.muckrock.com/ under your name. 
-  # WARNING
-
+  
+  #WARNING
   This is a destructive action.  You may lose access to all documents affected
   by this Add-On.  This is Add-On is primarily meant for users who have ended
   up with mutliple accounts and would like to consolidate them.  Please be very
