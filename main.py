@@ -13,10 +13,6 @@ class MoveAccount(AddOn):
     """Change the owning account for all documents"""
 
     def main(self):
-        if not self.documents:
-            self.set_message("Please select at least one document.")
-            return
-            
         me = self.client.users.get("me")
         users_orgs = me.organizations
         if self.data["user"] != me.username:
