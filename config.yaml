@@ -16,6 +16,18 @@ description: >-
   by this Add-On.  This is Add-On is primarily meant for users who have ended
   up with mutliple accounts and would like to consolidate them.  Please be very
   sure you know what you are doing before running this Add-On and [read the full instructions and tips here](https://github.com/MuckRock/documentcloud-move-account-addon#readme).
+instructions: >-
+  To transfer documents, both users must be a member of at least one shared organization. 
+  DocumentCloud has a group membership dropdown on the left sidebar. 
+  Click on the dropdown to expand the membership list of the organization. 
+  Click on the user you would like to transfer documents to, and copy the digits after their name that appear in the search bar. 
+  The organization ID can be found by clicking on the documents for the organization 
+  on the left sidebar and copying the digits that follow the name of the organization on the search bar. 
+  Your current username can be found at https://account.muckrock.com/ under your name. 
+  Warning: This is a destructive action. You may lose access to all documents affected by this Add-On. 
+  This is Add-On is primarily meant for users who have ended up with mutliple accounts and would like to consolidate them. 
+  Please be very sure you know what you are doing before running this Add-On and [read the full instructions and tips here](https://github.com/MuckRock/documentcloud-move-account-addon#readme).
+  
 type: object
 documents:
   - query
