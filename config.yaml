@@ -1,8 +1,8 @@
 title: Move Account
 description: |
-  Move documents to another user. 
-  **Warning**: Be careful of which documents you transfer!
+  Move a set of documents to another user. 
 instructions: |
+  **Warning**: Be careful of which documents you transfer!
   This will change the account owner for all documents in your current search. 
   To transfer documents, both users must be a member of at least one shared organization.
   DocumentCloud has a group membership dropdown in the top nav bar. 
