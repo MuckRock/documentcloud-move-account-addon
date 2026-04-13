@@ -13,6 +13,7 @@ class MoveAccount(AddOn):
     """Change the owning account for all documents"""
 
     def main(self):
+        self.client.session.headers.update({'User-Agent': 'Move Account Add-On'})
         me = self.client.users.get("me")
         users_orgs = me.organizations
         if self.data["user"] != me.username:
