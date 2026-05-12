@@ -2,14 +2,14 @@
 This DocumentCloud Add-On allows you to bulk edit documents
 """
 import time
-from documentcloud.addon import SoftTimeOutAddOn
+from documentcloud.addon import AddOn
 from documentcloud.exceptions import APIError
 from documentcloud.toolbox import grouper
 
 BULK_LIMIT = 25
 
 
-class MoveAccount(SoftTimeOutAddOn):
+class MoveAccount(AddOn):
     """Change the owning account for all documents"""
 
     def main(self):
