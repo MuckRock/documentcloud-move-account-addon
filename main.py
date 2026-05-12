@@ -1,7 +1,7 @@
 """
 This DocumentCloud Add-On allows you to bulk edit documents
 """
-
+import time
 from documentcloud.addon import AddOn
 from documentcloud.exceptions import APIError
 from documentcloud.toolbox import grouper
@@ -64,6 +64,7 @@ class MoveAccount(AddOn):
             except APIError as exc:
                 self.set_message(f"Error: {exc.error}")
                 raise
+            time.sleep(10)
 
         self.set_message(f"Succesfully transferred {count} documents")
 
