@@ -41,3 +41,4 @@ properties:
 required: ["new_user_id", "user"]
 categories:
   - bulk
+version: 2

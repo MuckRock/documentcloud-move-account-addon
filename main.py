@@ -2,17 +2,18 @@
 This DocumentCloud Add-On allows you to bulk edit documents
 """
 import time
-from documentcloud.addon import AddOn
+from documentcloud.addon import SoftTimeOutAddOn
 from documentcloud.exceptions import APIError
 from documentcloud.toolbox import grouper
 
 BULK_LIMIT = 25
 
 
-class MoveAccount(AddOn):
+class MoveAccount(SoftTimeOutAddOn):
     """Change the owning account for all documents"""
 
     def main(self):
+        """ Changes owner of documents on DC 25 per batch call"""
         self.client.session.headers.update({'User-Agent': 'Move Account Add-On'})
         me = self.client.users.get("me")
         users_orgs = me.organizations
@@ -35,7 +36,7 @@ class MoveAccount(AddOn):
         except APIError as exc:
             self.set_message(f"Error: {exc.error}")
             raise
-        if not (set(users_orgs) | set(new_user.organizations)):
+        if not set(users_orgs) | set(new_user.organizations):
             self.set_message(
                 "Error: You may only transfer your documents to a user in the "
                 "same organization as yourself"
